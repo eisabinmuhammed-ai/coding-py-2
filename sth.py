@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import messagebox
 from  datetime import date
 root=Tk()
 root.title("getting started whith wingets")
@@ -17,10 +18,12 @@ def display():
         greet='homework done\n'
     else:
          greet='homework not done\n'
+         messagebox.showwarning("Do homework")
     if name2=='yes':
         greet2='went to play done\n'
     else:
          greet2='went to play not done\n'
+         messagebox.showwarning("did not play")
     text_box.insert(END,greet2)
     text_box.insert(END,greet)
     text_box.insert(END,Message)
